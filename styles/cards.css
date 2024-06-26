@@ -1,0 +1,139 @@
+.blog__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.blog__card {
+    background-color: var(--co-white);
+    max-width: 384px;
+    min-height: 475px;
+    border: 1px solid var(--co-gray);
+    border-radius: 16px;
+    position: relative;
+}
+
+.big {
+    max-width: 588px;
+    min-height: 500px;
+}
+
+.blog__card-span {
+    margin: 8px;
+    position: absolute;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--co-black);
+    font-weight: 600;
+    border: 2px solid var(--co-gray);
+    border-radius: 24px;
+    padding: 4px 6px 4px 30px;
+    background-color: var(--co-white);
+    opacity: .7;
+}
+
+.blog__card-span::before {
+    content: url("/assets/svg/blog__select-horse.svg");
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+}
+
+.self {
+    margin-top: 50px;
+}
+
+.blog__card-img {
+    width: 100%;
+    min-height: 206px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.blog__card-description {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.blog__card-name {
+    margin: 0;
+    font-size: 18px;
+    padding: 0 30px 5px 0;
+}
+
+.blog__card-author {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.blog__card-text {
+    margin: 0;
+    font-size: 14px;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog__card-date {
+    font-size: 12px;
+    color: var(--co-light-black);
+    bottom: 0;
+    left: 15px;
+    position: absolute;
+}
+
+.blog__btn {
+    height: 48px;
+    width: 182px;
+    margin: 56px auto 60px;
+}
+
+@media (max-width: 1024px) {
+    .blog__card {
+        max-width: 304px;
+        min-height: 458px;
+    }
+    .big {
+        max-width: 468px;
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 415px) {
+    .blog__card {
+        max-width: 352px;
+        min-height: 426px;
+    }
+    .big {
+        max-width: 728px;
+        min-height: 599px;
+    }
+    .blog__card-img {
+        height: 206px;
+    }
+    .big-img {
+        height: 404px;
+    }
+}
+
+@media (max-width: 415px) {
+    .blog__card {
+        max-width: 374px;
+        min-height: 466px;
+    }
+}
+
+@media (max-width: 320px) {
+    .blog__card {
+        max-width: 288px;
+        min-height: 484px;
+    }
+}
+

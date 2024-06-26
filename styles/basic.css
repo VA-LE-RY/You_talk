@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    min-width: 320px;
+    background-image: url(/assets/png/back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+span, link, li {
+    line-height: 25px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1203px;
+}
+
+.btn {
+    background-color: var(--co-green);
+    color: var(--co-white);
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn,
+.info__btn,
+.blog__card,
+.header__nav-item-btn,
+.header__btn,
+.menu__link,
+.page__hidden:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 961px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 728px;
+    }
+}
+
+@media (max-width: 415px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 288px;
+    }
+}

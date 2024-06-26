@@ -1,0 +1,25 @@
+.breadcrumb__menu-list {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 15px 0 40px 0;
+}
+
+.breadcrumb__menu-link {
+    text-decoration: none;
+    color: var(--co-light-black);
+    margin: 0;
+    padding: 0 8px;
+}
+
+.breadcrumb li:nth-child(3n) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    color: var(--co-light-black);
+}

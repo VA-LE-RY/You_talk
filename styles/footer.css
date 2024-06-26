@@ -1,0 +1,163 @@
+.footer {
+    background-color: var(--co-blue);
+}
+
+.info__menu {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: .5px solid var(--co-light-black);
+}
+
+.info__menu-list {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__list {
+    list-style: none;
+    padding: 0;
+}
+
+.info__item {
+    padding-bottom: 15px;
+}
+
+.info__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--co-white);
+}
+
+.info__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--co-white);
+    width: 356px;
+}
+
+.info__input {
+    width: 384px;
+    display: flex;
+}
+
+.info__email {
+    width: 320px;
+    height: 48px;
+    padding: 14px 0 14px 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.info__email::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--co-gray-text);
+}
+
+.info__btn {
+    width: 64px;
+    height: 48px;
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+    background-color: var(--co-green);
+}
+
+.info__desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--co-white);
+    opacity: .7;
+    max-width: 450px;
+}
+
+.info__contacts {
+    width: 221px;
+    height: 122px;
+}
+
+.info__sk {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--co-white);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__sk::before {
+    content: url(/assets/png/info__sk.png);
+}
+
+.info__links {
+    width: 176px;
+    height: 32px;
+}
+
+.info__liks-list {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.info__doc-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 0 0 17px 0;
+}
+
+.info__doc-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--co-white);
+    opacity: .7;
+}
+
+@media (max-width: 768px) {
+    .info__menu {
+        flex-wrap: wrap;
+    }
+    .info__menu-list {
+        width: 247px;
+    }
+}
+
+@media (max-width: 415px) {
+    .info-form {
+        padding: 0;
+    }
+    .info__doc-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info__menu-list {
+        width: 375px;
+    }
+}
+
+@media (max-width: 321px) {
+    .info__title {
+        width: 290px;
+    }
+    
+    .info__input {
+        width: 290px;
+    }
+    
+    .info__email {
+        width: 150px;
+        border-radius: 4px;
+    }
+    .info__btn{
+        display: none;
+    }
+}
+
